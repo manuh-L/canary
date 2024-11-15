@@ -1,12 +1,12 @@
 # Deployment Information
 pods_status:
-  main_pods_running: #TODO: Enter number of main pods running
-  canary_pods_running: #TODO: Enter number of canary pods running
+  main_pods_running: #TODO: 3
+  canary_pods_running: #TODO: 1
 
 # Service Information
 service_endpoints:
-  main_service_cluster_ip: #TODO: Enter the ClusterIP of main service
-  canary_service_cluster_ip: #TODO: Enter the ClusterIP of canary service
+  main_service_cluster_ip: #TODO: 10.244.0.13
+  canary_service_cluster_ip: #TODO: 10.244.0.17
 
 # Ingress Information
 ingress_details:
@@ -15,9 +15,9 @@ ingress_details:
 
 # Metrics
 main_deployment_metrics:
-  http_requests_total: #TODO: Enter the value from main deployment's /metrics endpoint
-  process_cpu_seconds_total: #TODO: Enter the CPU seconds from main deployment
-  process_resident_memory_bytes: #TODO: Enter the memory usage from main deployment
+  http_requests_total: #TODO:  2.0 Enter the value from main deployment's /metrics endpoint
+  process_cpu_seconds_total: 0.5 #TODO: Enter the CPU seconds from main deployment
+  process_resident_memory_bytes: 2.6472448e+07 #TODO: Enter the memory usage from main deployment
 
 canary_deployment_metrics:
   http_requests_total: #TODO: Enter the value from canary deployment's /metrics endpoint
